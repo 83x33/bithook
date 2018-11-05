@@ -1,0 +1,17 @@
+/dist
+/logs
+/npm-debug.log
+/node_modules
+/.vscode
+/dump
+/test
+.DS_Store
+test.js
+tmp.js
+package-lock.json
+sftp-config.json
+notes.md
+.env
+.env.dev
+.env.production
+.env.test

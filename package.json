@@ -1,0 +1,27 @@
+{
+  "name": "bithook",
+  "version": "1.0.2",
+  "description": "Address status handler over bitcoind",
+  "source": "src/index.js",
+  "main": "index.js",
+  "unpkg": "dist/bithook.umd.js",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c --watch",
+    "start": "npm run build && npx serv",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "rollup-plugin-terser": "^3.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bitcoinjs-lib": "^4.0.2",
+    "esm": "^3.0.84",
+    "lodash": "^4.17.11",
+    "rpc-client": "^1.0.1",
+    "rxjs": "^6.3.3",
+    "socket.io-client": "^2.1.1",
+    "zeromq": "^5.1.0"
+  }
+}
