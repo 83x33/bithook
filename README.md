@@ -12,13 +12,16 @@ Bithook abstracts that complexity, and let you interact at any step of the payme
 // install
 npm install bithook --save
 
-// import
+// import es6
 import bithook from 'bithook'
+
+// import es5
+var bithook = require("bithook").default
 ```
 
 ## Use
 
-Connect to your bitcoind server :
+Connect to your bitcoind server (make sure your ip is whitelisted in your bitcoin.conf with `rpcallowip`)
 
 ```js
 const chain = new bithook({ bitcoind: 'bitcoind://rpcuser:rpcpassword@yourserver.com:8332' })
