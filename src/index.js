@@ -40,7 +40,7 @@ export default function SDK({
 
 
 
-SDK.scanForOutputs = (item, network = "mainnet") => {
+SDK.scanForOutputs = (item, network = 'mainnet') => {
   const addresses = WL.keys()
   const outputs = (addresses.length && item.findOutputs({ 
       addresses

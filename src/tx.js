@@ -73,7 +73,7 @@ Tx.prototype.find = function(type, { addresses, amounts, network = 'mainnet', hy
 
 
 const parseOutput = (el, { network = 'mainnet' } = {}) => {
-  network = network == 'testnet' ? networks.testnet : null
+  network = network == 'mainnet' ? networks.mainnet : networks.testnet
 
   try {
     if(Script.toASM(el.script).substr(0,9) == 'OP_RETURN') 
@@ -96,7 +96,7 @@ const parseOutput = (el, { network = 'mainnet' } = {}) => {
 // of a scriptPubKey or the last 65 bytes of a scriptSig.
 
 const parseInput = (el, { network = 'mainnet' } = {}) => {
-  network = network == 'testnet' ? networks.testnet : null
+  network = network == 'mainnet' ? networks.mainnet : networks.testnet
   try {
 
     throw 'TODO: input parsing not yet implemented'

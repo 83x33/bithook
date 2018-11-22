@@ -20,7 +20,7 @@ Streams.block = new Subject()
 
 class Zmq extends EventEmitter {
 
-  constructor({ bitcoind, network = "mainnet" } = {}){
+  constructor({ bitcoind, network = 'mainnet' } = {}){
     super()
     this.streams = Streams
     this.sockets = []
